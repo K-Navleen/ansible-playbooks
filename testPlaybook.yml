@@ -1,0 +1,8 @@
+---
+- hosts: localhost
+      become: true
+      tasks:
+        - name: mydir
+          ansible.builtin.file:
+            path: /home/user1/mydir
+            state: directory
